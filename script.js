@@ -33,7 +33,7 @@ MENU_ITEMS = {
     markdown_file: "bios/tech_recruiter.md",
     key: "recruiter",
     uri_extension: "recruiter",
-    title: "so I am a software engineer",
+    title: "so I am an engineer",
     image_src: "assets/me-working.png",
     shadow_color: "#6B95F4",
     gradient_colors: ["#6B95F4", "#75edcb", "#f5aaed"]
