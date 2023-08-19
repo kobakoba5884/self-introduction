@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="My name is Mizuki Kobayashi, Tokyo based human who works as a engineer"
+    />
+    <meta content="/assets/transparent.png" property="og:image" />
+    <link rel="icon" href="/assets/transparent.png" type="image/x-icon" />
+
+    <title>Mizuki Kobayashi</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="styles.css" charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZNYWY3H78N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZNYWY3H78N");
+    </script>
+  </head>
+
+  <body>
+    <div id="site-container">
+      <section id="nav">
+        <div class="card box-card shadow-card">
+          <div class="header">
+            <span class="name">
+              <div id="me-picture-container">
+                <img id="me-picture" src="assets/transparent.png" />
+              </div>
+              <h1>
+                <a class="home-link" href="/">Mizuki Kobayashi (he/him)</a>
+              </h1>
+            </span>
+            <div class="material-symbols-outlined hamburger">menu</div>
+          </div>
+          <section class="links">
+            <ul>
+              <li>
+                <a href="https://github.com/kobakoba5884" target="_blank"
+                  >github</a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section class="main" id="content">
+        <div id="role-container">
+          <div id="you-section">
+            <label>You are <span class="label-a">a</span></label>
+            <nav class="select-container">
+              <select name="categoris" id="categoris" class="">
+                <option class="bio-option" value="#" data-bio="idk">??</option>
+                <option class="bio-option" value="#" data-bio="recruiter">
+                  tech recruiter
+                </option>
+                <option
+                  class="bio-option"
+                  value="#"
+                  data-bio="romantic_interest"
+                >
+                  romantic interest
+                </option>
+                <option class="bio-option" value="#" data-bio="friend">
+                  friend
+                </option>
+                <option class="bio-option" value="#" data-bio="stalker">
+                  internet stalker
+                </option>
+              </select>
+            </nav>
+          </div>
+          <div id="me-section"></div>
+        </div>
+        <div class="bio-text" id="idk-text" style="display: none"></div>
+        <div class="bio-text" id="recruiter-text" style="display: none"></div>
+        <div class="bio-text" id="networker-text" style="display: none"></div>
+        <div
+          class="bio-text"
+          id="romantic_interest-text"
+          style="display: none"
+        ></div>
+        <div class="bio-text" id="friend-text" style="display: none"></div>
+        <div class="bio-text" id="stalker-text" style="display: none"></div>
+      </section>
+    </div>
+  </body>
+</html>
