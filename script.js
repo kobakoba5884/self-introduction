@@ -45,6 +45,15 @@ MENU_ITEMS = {
     shadow_color: "#6BF4CD",
     gradient_colors: ["#6BF4CD", "#2eff3a", "#deff64"],
   },
+  family: {
+    markdown_file: "bios/en/family.md",
+    key: "family",
+    uri_extension: "family",
+    title: "so we share the same roots",
+    image_src: "assets/family.png",
+    shadow_color: "#D7B4E6",
+    gradient_colors: ["#D7B4E6", "#8f7cd4", "#6f56c1"],
+  },
 };
 $(function () {
   const updateSite = (item) => {
