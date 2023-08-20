@@ -63,6 +63,7 @@ $(function () {
     $("#me-picture").css("background-color", item.shadow_color);
 
     $("#categoris").css("box-shadow", ".5rem .5rem " + item.shadow_color);
+    $(".bio-text").css("box-shadow", ".5rem .5rem " + item.shadow_color);
     if (item.starts_with_verb) {
       $(".label-a").text("an");
     } else {
