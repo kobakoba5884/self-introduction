@@ -23,7 +23,7 @@ You found me! I'll make this easy for you.
 
 ### What I like
 
-- food (especially sushi! sushi!! sushi!!!!)
+- food (especially sushi! sausage!! sushi!!!!)
 - friends
 
 
