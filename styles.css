@@ -1,7 +1,11 @@
 @font-face {
   font-family: Space_Mono;
-  src: url(fonts/Caveat/Caveat-Medium.ttf) format("truetype");
+  src: url(fonts/Caveat/Caveat-Bold.ttf) format("truetype");
+}
 
+@font-face {
+  font-family: CustomFontJapanese;
+  src: url(fonts/Zen_Kurenaido/ZenKurenaido-Regular.ttf) format('truetype');
 }
 
 :root {
@@ -24,8 +28,6 @@ span {
   margin: 0;
   padding: 0;
 }
-
-p:first-child {}
 
 /* 
 h1 {
@@ -208,6 +210,22 @@ label,
 .highlight {
   background-color: yellow;
 }
+
+.lang-toggle {
+  padding: 5px;
+  margin-top: 7px;
+  font-size: 1.9rem;
+}
+
+.language-check{
+  display: none;
+}
+
+.language-label{
+  cursor: pointer;
+  user-select: none;
+}
+
 
 @media only screen and (max-width: 768px) {
   html {
