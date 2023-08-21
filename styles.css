@@ -198,8 +198,8 @@ label,
 
 #content {
   flex: 1;
-  font-size: 1rem;
   margin-left: 18rem;
+  margin-bottom: 1.7rem;
 }
 
 #expand {
