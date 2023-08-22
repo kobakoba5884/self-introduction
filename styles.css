@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: CustomFontJapanese;
-  src: url(fonts/Zen_Kurenaido/ZenKurenaido-Regular.ttf) format('truetype');
+  src: url(fonts/Zen_Kurenaido/ZenKurenaido-Regular.ttf) format("truetype");
 }
 
 :root {
@@ -17,12 +17,10 @@ html {
   margin: 0;
 }
 
-
 body {
   margin: 0;
-  letter-spacing: .005em;
+  letter-spacing: 0.005em;
 }
-
 
 span {
   margin: 0;
@@ -38,7 +36,7 @@ h5 {
  */
 /* } */
 li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 #site-container {
@@ -48,7 +46,7 @@ li {
   /* padding-bottom: 6rem; */
 }
 
-#me-picture-containers{
+#me-picture-containers {
   border-radius: 50%;
   overflow: hidden;
 }
@@ -69,7 +67,6 @@ li {
   font-size: 2.8rem;
   padding: 2rem 0 1rem;
   line-height: 4rem;
-
 }
 
 #you-section {
@@ -79,26 +76,25 @@ li {
 label,
 .select-container {
   display: inline;
-
 }
 
-#nav{
+#nav {
   font-size: 1.5rem;
 }
 
 #categoris {
   all: unset;
   display: inline-block;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 0;
   background: transparent;
-  font-family: 'Space_Mono';
+  font-family: "Space_Mono";
   font-size: 2.25rem;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 1px solid #999;
-  box-shadow: .5rem .5rem #777;
+  box-shadow: 0.5rem 0.5rem #777;
   position: relative;
-  top: -.25rem;
+  top: -0.25rem;
   padding-right: 3rem;
 }
 
@@ -117,7 +113,6 @@ label,
   pointer-events: none;
 
   /* top: .4rem; */
-
 }
 
 #me-section {
@@ -140,7 +135,7 @@ label,
 }
 
 .links ul {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .bio-text {
@@ -148,12 +143,12 @@ label,
   padding: 2rem;
   margin: 0.8rem;
   border: 1px solid #999;
-  box-shadow: .5rem .5rem #777;
+  box-shadow: 0.5rem 0.5rem #777;
   overflow: hidden;
   font-weight: bold;
 }
 
-.bio-text>h3 {
+.bio-text > h3 {
   margin-top: 2.5rem;
 }
 .card {
@@ -173,9 +168,9 @@ label,
 .box-card {
   --s: 0px;
   /* spread-radius */
-  --x: .5rem;
+  --x: 0.5rem;
   /* X offset */
-  --y: .5rem;
+  --y: 0.5rem;
   /* Y offses */
   --color-1: #fff;
   --color-2: #aaa;
@@ -190,9 +185,14 @@ label,
 .shadow-card:before {
   content: "";
   position: absolute;
-  inset: calc(-1*var(--s) - 2px);
+  inset: calc(-1 * var(--s) - 2px);
   transform: translate3d(var(--x), var(--y), -1px);
-  background: conic-gradient(from -45deg at 71% 84%, var(--color-1), var(--color-2), var(--color-3));
+  background: conic-gradient(
+    from -45deg at 71% 84%,
+    var(--color-1),
+    var(--color-2),
+    var(--color-3)
+  );
   border-radius: inherit;
 }
 
@@ -216,15 +216,14 @@ label,
   font-size: 1.9rem;
 }
 
-.language-check{
+.language-check {
   display: none;
 }
 
-.language-label{
+.language-label {
   cursor: pointer;
   user-select: none;
 }
-
 
 @media only screen and (max-width: 768px) {
   html {
@@ -237,8 +236,6 @@ label,
 
   #expand {
     display: inline;
-
-
   }
 
   .box-card {
@@ -248,7 +245,12 @@ label,
   }
 
   .shadow-card:before {
-    background: conic-gradient(from 268deg at 55% 19%, var(--color-1), var(--color-2), var(--color-3));
+    background: conic-gradient(
+      from 268deg at 55% 19%,
+      var(--color-1),
+      var(--color-2),
+      var(--color-3)
+    );
   }
 
   #expand img {
@@ -258,12 +260,18 @@ label,
 
   .links {
     display: none;
+    /* height: 100vh; */
   }
 
   .links ul {
     margin: 0 2rem;
-    padding: 0;
+    padding: 1.2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
 
+  .links li {
+    list-style-type: none;
   }
 
   .card {
@@ -291,13 +299,11 @@ label,
     padding-bottom: 0;
   }
 
-
   #me-picture {
     height: 4rem;
     width: 4rem;
     display: inline;
-    margin: .5rem;
-
+    margin: 0.5rem;
   }
 
   h1 {
@@ -330,7 +336,6 @@ label,
 }
 
 @media (prefers-color-scheme: dark) {
-
   html,
   #content,
   #categoris,
@@ -342,11 +347,11 @@ label,
   }
 
   a {
-    color: rgb(182, 234, 255)
+    color: rgb(182, 234, 255);
   }
 
   a:visited {
-    color: rgb(243, 182, 255)
+    color: rgb(243, 182, 255);
   }
 
   .home-link {
@@ -357,7 +362,8 @@ label,
     color: black;
   }
 
-  #categoris, .card {
+  #categoris,
+  .card {
     border-color: #fff;
   }
 }

@@ -53,7 +53,7 @@ MENU_ITEMS = {
     image_src: "assets/family.png",
     shadow_color: "#D7B4E6",
     gradient_colors: ["#D7B4E6", "#8f7cd4", "#6f56c1"],
-  },
+  }
 };
 $(function () {
   const updateSite = (item) => {
@@ -93,14 +93,17 @@ $(function () {
 
   function loadMarkdownAndImage(item) {
     fetch(item.markdown_file)
-      .then(response => response.text())
-      .then(text => {
-        document.getElementById(`${item.key}-text`).innerHTML = marked.parse(text, {
-          mangle: false,
-          headerIds: false,
-        });
+      .then((response) => response.text())
+      .then((text) => {
+        document.getElementById(`${item.key}-text`).innerHTML = marked.parse(
+          text,
+          {
+            mangle: false,
+            headerIds: false,
+          }
+        );
       });
-  
+
     const img = new Image();
     img.src = item.image_src;
   }
@@ -111,7 +114,7 @@ $(function () {
       let originalPath = item.markdown_file.match(/bios\/.*\/.*\.md/)[0];
       let newPath = originalPath.replace(/en|ja/, currentLanguage);
       item.markdown_file = newPath;
-  
+
       loadMarkdownAndImage(item);
     }
   }
@@ -123,7 +126,7 @@ $(function () {
 
   const languageCheck = $("#language-check");
   languageCheck.change(() => {
-    if (languageCheck.prop('checked')) {
+    if (languageCheck.prop("checked")) {
       updateContentBasedOnLanguage("ja");
       $(".bio-text").css("font-family", "CustomFontJapanese");
     } else {
@@ -143,7 +146,7 @@ $(function () {
   });
 
   $(".hamburger").click((el) => {
-    $(".links").toggle();
+    $(".links").slideToggle();
   });
 
   $("#content").click((el) => {
