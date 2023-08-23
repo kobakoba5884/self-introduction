@@ -143,7 +143,6 @@ label,
   padding: 2rem;
   margin: 0.8rem;
   border: 1px solid #999;
-  box-shadow: 0.5rem 0.5rem #777;
   overflow: hidden;
   font-weight: bold;
 }
@@ -216,9 +215,24 @@ label,
   font-size: 1.9rem;
 }
 
-.language-check {
-  display: none;
+/* input[type="checkbox"] {
+  appearance: none;
+  width: 38px;
+  height: 38px;
+  justify-items: center;
+  background-color: #fff;
+  border: 1px solid #999;
+  box-shadow: 0.4rem 0.4rem #777;
+  cursor: pointer;
+  border-radius: 4px;
+  background: inherit;
 }
+
+input[type="checkbox"]:checked {
+}
+
+input[type="checkbox"]:hover {
+} */
 
 .language-label {
   cursor: pointer;
@@ -323,6 +337,7 @@ label,
     line-height: 5rem;
     margin-right: 1rem;
     cursor: pointer;
+    user-select: none;
   }
 
   #content {
