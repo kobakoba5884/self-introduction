@@ -84,7 +84,6 @@ label,
 
 #categoris {
   all: unset;
-  display: inline-block;
   border-radius: 0.5rem;
   border: 0;
   background: transparent;
@@ -93,17 +92,16 @@ label,
   padding: 0.5rem;
   border: 1px solid #999;
   box-shadow: 0.5rem 0.5rem #777;
-  position: relative;
   top: -0.25rem;
   padding-right: 3rem;
 }
 
 .select-container {
   position: relative;
+  display: inline-block;
 }
 
 .select-container:after {
-  height: 5rem;
   line-height: 5rem;
   color: #999;
   content: "▾";
@@ -111,8 +109,6 @@ label,
   font-size: 2rem;
   right: 2rem;
   pointer-events: none;
-
-  /* top: .4rem; */
 }
 
 #me-section {
