@@ -13,7 +13,7 @@ MENU_ITEMS = {
     key: "stalker",
     uri_extension: "stalker",
     title: "so umm wow you are honest",
-    image_src: "assets/my-stolker.png",
+    image_src: "assets/my-stalker.png",
     shadow_color: "#D2F46B",
     gradient_colors: ["#D2F46B", "#85f46b", "#f4ab6b"],
     starts_with_verb: true,
