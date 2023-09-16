@@ -127,13 +127,13 @@ label,
   list-style-type: none;
 }
 
-.links li:nth-child(1)::before{
+/* .links li:nth-child(1)::before{
   content: '\f09b';
 }
 
 .links li:nth-child(2)::before{
   content: '\f0e0';
-}
+} */
 
 .bio-text {
   font-size: 1.65rem;
